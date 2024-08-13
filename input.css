@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 .btn{
     @apply text-sm  px-4 py-2 bg-violet-700 text-white rounded-full hover:bg-violet-500 active:bg-pink-800 focus:outline-black;
@@ -9,4 +9,4 @@
 .navili{
     @apply mx-4 px-4 my-4 hover:border hover:bg-violet-900;
 }
-@tailwind utilities;
+@tailwind utilities; */
