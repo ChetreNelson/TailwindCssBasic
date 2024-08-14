@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+        <html lang="en" style=" 0; padding: 0; box-sizing: border-box">
+          <head style=" 0; padding: 0; box-sizing: border-box">
+            <meta
+              charset="UTF-8"
+              style=" 0; padding: 0; box-sizing: border-box"
+            />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+              style=" 0; padding: 0; box-sizing: border-box"
+            />
+            <title style=" 0; padding: 0; box-sizing: border-box">
+              Document
+            </title>
+            <link
+              rel="nofollow"
+              href="https://justpaste.it/redirect/22p9x/https%3A%2F%2Ffonts.googleapis.com"
+              style=" 0; padding: 0; box-sizing: border-box"
+            />
+            <link
+              rel="nofollow"
+              href="https://justpaste.it/redirect/22p9x/https%3A%2F%2Ffonts.gstatic.com"
+              crossorigin
+              style=" 0; padding: 0; box-sizing: border-box"
+            />
+          </head>
+          <body
+            style=" 0;box-sizing: border-box;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);gap: 10px;
+              background: #fff; box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); 'Roboto', sans-serif;"
+          >
+            <div style=" 0; padding: 0; box-sizing: border-box">
+              <img
+                src="${process.env.URL}/img/logo.png"
+                alt="logo"
+                style=" 0;padding: 0;box-sizing: border-box; 33px;"
+              />
+              <h3
+                style=" 0;padding: 0;box-sizing: border-box;color: var(--primary, #1c64f2);font-feature-settings: 'clig' off, 'liga' off;font-size: 24px;font-style: normal;font-weight: 700; 140%;padding-bottom: 24px;"
+              >
+                You Have a Booking
+              </h3>
+              <p
+                style=" 0;padding: 0;box-sizing: border-box;font-size: 14px;color: #4b5563;padding-bottom: 24px;font-style: normal;
+                  font-weight: 400; 24px;letter-spacing: 0.2px;"
+              >
+                Hello ${email},
+                <br style=" 0; padding: 0; box-sizing: border-box" />You’ve
+                Received a New Booking
+              </p>
+              <h1
+                class="business"
+                style=" 0;padding: 0;box-sizing: border-box;color: var(--Gray-1, #1f2937);font-size: 18px;font-style: normal;
+                  font-weight: 700;padding-bottom: 24px;font-feature-settings: 'clig' off, 'liga' off; 140%;"
+              >
+                ${title}
+              </h1>
+              <table style=" 0; padding: 0; box-sizing: border-box">
+                <tr style=" 0; padding: 0; box-sizing: border-box; vertical-align:top">
+                  <td
+                    style=" 0;padding: 0;box-sizing: border-box;padding-right: 64px;"
+                  >
+                    <h1
+                      style=" 0;padding: 0;box-sizing: border-box;color: var(--Gray-1, #1f2937);font-size: 14px;font-style: normal;
+                      font-weight: 600;padding-bottom: 4px;"
+                    >
+                      Meeting With
+                    </h1>
+                    <h2
+                      style=" 0;padding: 0;box-sizing: border-box;color: var(--Black-4, #5e6366);padding-bottom: 24px;font-size: 14px;font-weight: 400;"
+                    >
+                      Name : ${req.user.fullName}
+
+                      <div
+                        class="emails"
+                        style="display: flex;gap: 5px; 0;padding: 0;box-sizing: border-box;"
+                      >
+                        <h2
+                          style=" 0;padding: 0;box-sizing: border-box;color: var(--Black-4, #5e6366);padding-bottom: 24px;font-size: 14px;font-weight: 400;"
+                        >
+                          Email :
+                          </h2>
+                          <div style=" 0; padding: 0; box-sizing: border-box">
+                            <h2
+                              style=" 0;padding: 0;box-sizing: border-box;color: var(--Black-4, #5e6366);font-size: 14px;
+                                font-weight: 400;"
+                            >
+                              ${req.user.email} -
+                              <span
+                                style="color: #9ca3af;display: inline-block; 0;padding: 0;box-sizing: border-box;"
+                                >Organizer
+                              </span>
+                            </h2>                          
+                            ${emails}
+                          </div>
+                        </h2>
+                      </div>
+                    </h2>
+                  </td>
+
+                  <td
+                    style=" 0;padding: 0;box-sizing: border-box;padding-right: 64px;"
+                  >
+                    <h1
+                      style=" 0;padding: 0;box-sizing: border-box;color: var(--Gray-1, #1f2937);font-size: 14px;
+                        font-style: normal;font-weight: 600;padding-bottom: 4px;"
+                    >
+                      Meeting Date & Time
+                    </h1>
+                    <h2
+                      style=" 0;padding: 0;box-sizing: border-box;color: var(--Black-4, #5e6366);
+                        padding-bottom: 24px;font-size: 14px;font-weight: 400;"
+                    >
+                      Date : ${startDay}
+                      <br style=" 0; padding: 0; box-sizing: border-box" />Time :
+                      ${startTime12Format}
+                    </h2>
+                  </td>
+                </tr>
+                <tr style=" 0; padding: 0; box-sizing: border-box">
+                  <td
+                    style="
+                      0;
+                      padding: 0;
+                      box-sizing: border-box;
+                      padding-right: 64px;
+                    "
+                  >
+                    <h1
+                      style="
+                        0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        color: var(--Gray-1, #1f2937);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        padding-bottom: 4px;
+                      "
+                    >
+                      Meeting Duration
+                    </h1>
+                    <h2
+                      style="
+                        0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        color: var(--Black-4, #5e6366);
+                        padding-bottom: 24px;
+
+                        font-size: 14px;
+                        font-weight: 400;
+                      "
+                    >
+                      ${meetingDuration} Minutes Meeting
+                    </h2>
+                  </td>
+                  <td
+                    style="
+                      0;
+                      padding: 0;
+                      box-sizing: border-box;
+                      padding-right: 64px;
+                    "
+                  >
+                    <h1
+                      style="
+                        0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        color: var(--Gray-1, #1f2937);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        padding-bottom: 4px;
+                      "
+                    >
+                      Time Zone
+                    </h1>
+                    <h2
+                      style="
+                        0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        color: var(--Black-4, #5e6366);
+                        padding-bottom: 24px;
+
+                        font-size: 14px;
+                        font-weight: 400;
+                      "
+                    >
+                      ${timeZone}
+                    </h2>
+                  </td>
+                </tr>
+                <tr style=" 0; padding: 0; box-sizing: border-box">
+                  <td
+                    style=" 0;padding: 0;box-sizing: border-box;padding-right: 64px;"
+                  >
+                    <h1
+                      style=" 0;padding: 0;box-sizing: border-box;color: var(--Gray-1, #1f2937);font-size: 14px;
+                        font-style: normal;font-weight: 600;padding-bottom: 4px;"
+                    >
+                    Meeting Location
+                    </h1>
+                    <h2
+                      style=" 0;padding: 0;box-sizing: border-box;color: var(--Black-4, #5e6366);padding-bottom: 24px;
+                        font-size: 14px;font-weight: 400;"
+                    >
+                      ${location || "N/A"}
+                    </h2>
+                  </td>
+                  <td
+                    style="
+                      0;
+                      padding: 0;
+                      box-sizing: border-box;
+                      padding-right: 64px;
+                    "
+                  >
+                    <h1
+                      style="
+                        0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        color: var(--Gray-1, #1f2937);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        padding-bottom: 4px;
+                      "
+                    >
+                      Phone Number
+                    </h1>
+                    <h2
+                      style="
+                        0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        color: var(--Black-4, #5e6366);
+                        padding-bottom: 24px;
+
+                        font-size: 14px;
+                        font-weight: 400;
+                      "
+                    >
+                      ${req.user.phone || "N/A"}
+                    </h2>
+                  </td>
+                </tr>
+             
+                ${contactMessageToJoinee || ""}
+             
+              </table>
+            </div>
+
+            <h1
+              style=" 0;padding: 0;box-sizing: border-box;color: var(--Gray-1, #1f2937);font-size: 14px;font-style: normal;
+                font-weight: 600;padding-bottom: 4px;"
+            >
+              Description
+            </h1>
+            <h5
+              style=" 0;padding: 0;box-sizing: border-box;color: var(--small-text-color, #6b7280);font-size: 14px;
+                font-style: normal;font-weight: 400; 20px;letter-spacing: -0.14px;padding-bottom: 28px;"
+            >
+              ${description || "N/A"}
+            </h5>        
+
+            <div
+              class="button"
+              style=" 0;padding: 0;box-sizing: border-box;display: flex; 28px;"
+            >
+              <a
+                class="btn-1"
+                href=''
+                style="cursor: pointer; 28px;padding: 9px 23px;box-sizing: border-box;border: 1px solid #027a48;color: green;border-radius: 6px; 18px;font-weight: 600;font-size: 14px;background-color: #027a481f;text-decoration: none; cursor:pointer; color:green "
+              >
+                    Accept
+              </a>
+
+              <a
+                class="btn-2"
+                href=''
+                style="cursor: pointer; 0;padding: 9px 23px;box-sizing: border-box;border: 1px solid #e02424;color: #e02424;
+                  border-radius: 6px; 18px;font-weight: 600;font-size: 14px;background-color: #e024241f; text-decoration: none; cursor:pointer; color: #e02424 "
+              >
+                    Reject
+              </a>
+             
+            </div>
+
+            <h6
+              style=" 0;padding: 0;box-sizing: border-box;color: var(--Gray-3, #4b5563);font-size: 14px;font-style: normal;font-weight: 400; 150%;letter-spacing: 0.2px;"
+            >
+              Thanks, <br style=" 0; padding: 0; box-sizing: border-box" />Zippy
+              Plan Team
+            </h6>
+          </body>
+        </html>
