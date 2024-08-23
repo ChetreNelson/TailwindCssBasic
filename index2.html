@@ -15,9 +15,21 @@
       referrerpolicy="no-referrer"
     />
     <title>Document</title>
+    <style>
+      @media (max-width: 600px) {
+        .padding-sm {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        .d-none {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <div
+      class="padding-sm"
       style="
         margin: 0;
         padding: 0;
@@ -40,6 +52,7 @@
         />
       </div>
       <div
+        class="padding-sm"
         style="
           margin: 0;
           padding: 0;
@@ -63,7 +76,7 @@
         >
           UI/UX Interview
         </p>
-        <table cellspacing="0">
+        <table cellspacing="0" style="width: 100%">
           <tr>
             <td
               style="
@@ -96,6 +109,7 @@
                   1:15pm - 1:30pm
                 </span>
                 <span
+                  class="d-none"
                   style="
                     margin: 0;
                     padding: 0;
@@ -151,6 +165,7 @@
                     >ashmita@gmail.com</span
                   >
                   <span
+                    class="d-none"
                     style="
                       margin: 0;
                       padding: 0;
@@ -227,20 +242,27 @@
                 src="https://api.zippyplan.com/template/video.png"
               />
             </td>
-            <td style="vertical-align: top; padding-right: 32px">
+            <td style="vertical-align: top; padding-right: 16px">
               <span style="margin: 0; padding: 0">
                 <span style="font-weight: 500">Video Call</span>
                 <br />
                 <a
-                  style="margin: 0; padding: 0; font-size: 14px; color: #1c64f2"
+                  style="
+                    margin: 0;
+                    padding: 0;
+                    font-size: 14px;
+                    color: #1c64f2;
+                    word-break: break-all;
+                  "
                   href="https://meet.google.com/fzp-wkti-aja"
                   >https://meet.google.com/fzp-wkti-aja
                 </a>
               </span>
             </td>
 
-            <td>
+            <td class="d-none">
               <button
+                class="padding-sm"
                 style="
                   margin: 0;
                   padding: 0;
@@ -300,13 +322,16 @@
           hesitate and feel free to speak. All the best for your interview
         </p>
 
-        <div style="  padding-top: 32px;">
+        <div style="padding-top: 32px">
           Notes
           <p style="margin: 0; padding: 0; font-weight: 400; padding-top: 12px">
-         If you want to rescheduled and cancel the meeting. Please Visit Here
-         <br/>
-          Link : <a href="www.zippyplan.com" style="font-size: 14px; color: #1c64f2">www.zippyplan.com</a>
-        </p>
+            If you want to rescheduled and cancel the meeting. Please Visit Here
+            <br />
+            Link :
+            <a href="www.zippyplan.com" style="font-size: 14px; color: #1c64f2"
+              >www.zippyplan.com</a
+            >
+          </p>
         </div>
         <div style="margin: 0; padding: 0; padding: 32px 0">
           <button
