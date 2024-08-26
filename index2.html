@@ -16,12 +16,23 @@
     />
     <title>Document</title>
     <style>
+      ul li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
       @media (max-width: 600px) {
         .padding-sm {
           padding-left: 16px !important;
           padding-right: 16px !important;
         }
+      }
+      @media (max-width: 425px) {
         .d-none {
+          display: none;
+        }
+      }
+      @media (max-width: 320px) {
+        .d-none1 {
           display: none;
         }
       }
@@ -76,7 +87,7 @@
         >
           UI/UX Interview
         </p>
-        <table cellspacing="0" style="width: 100%">
+        <table cellspacing="0" style="width: 100%" border="0">
           <tr>
             <td
               style="
@@ -109,7 +120,7 @@
                   1:15pm - 1:30pm
                 </span>
                 <span
-                  class="d-none"
+                  class="d-none1"
                   style="
                     margin: 0;
                     padding: 0;
@@ -120,6 +131,7 @@
                     color: #079455;
                     font-size: 12px;
                     font-weight: 500;
+                    white-space: nowrap;
                   "
                 >
                   15 Minutes
@@ -154,21 +166,17 @@
                   font-weight: 400;
                 "
               >
-                <li style="margin: 0; padding: 0">
-                  <span
-                    style="
-                      margin: 0;
-                      padding: 0;
-                      text-decoration: underline;
-                      padding-right: 12px;
-                    "
+                <li>
+                  <span style="text-decoration: underline; padding-right: 12px"
                     >ashmita@gmail.com</span
                   >
                   <span
-                    class="d-none"
+                    class="d-none1"
                     style="
+                      display: inline-block;
                       margin: 0;
                       padding: 0;
+                      margin-top: 4px;
                       border: 1px solid #8db1f8;
                       padding: 2px 8px;
                       border-radius: 50px;
@@ -181,15 +189,9 @@
                     Organizer
                   </span>
                 </li>
-                <li style="margin: 0; padding: 0; text-decoration: underline">
-                  ashmita@gmail.com
-                </li>
-                <li style="margin: 0; padding: 0; text-decoration: underline">
-                  ashmita@gmail.com
-                </li>
-                <li style="margin: 0; padding: 0; text-decoration: underline">
-                  ashmita@gmail.com
-                </li>
+                <li style="text-decoration: underline">ashmita@gmail.com</li>
+                <li style="text-decoration: underline">ashmita@gmail.com</li>
+                <li style="text-decoration: underline">ashmita@gmail.com</li>
               </ul>
             </td>
           </tr>
